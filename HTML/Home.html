@@ -1,0 +1,407 @@
+<html>
+     <head>
+	    <title>Home</title>
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<style>
+        body{
+        background-image:url('bgimg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+    }
+	.buttonHolder{ text-align: right; }
+	
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    .slideshow-container {
+        max-width: 1150px;
+        position: relative;
+        margin: auto;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 30px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @media only screen and (max-width: 600px, max-height: 600px) {
+        .prev, .next,.text {font-size: 11px}
+    }
+	
+	a{
+	    word-spacing: 14cm;
+	}
+    </style>
+	</head>
+	
+    <body>
+		<div class="slideshow-container" style="font-family: 'Dancing Script', cursive;">
+
+        <div class="mySlides fade" style="display: block;">
+            <div class="numbertext">1 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/europe/spain"><img src="spain.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">Spain</div>
+        </div>
+
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">2 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/europe/germany"><img src="germany.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">Germany</div>
+        </div>
+
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">3 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/europe/france"><img src="france.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">France</div>
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">4 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/europe/italy"><img src="italy.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">Italy</div>
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">5 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/middle-east/dubai"><img src="dubai.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">Dubai</div>
+        </div>
+        <div class="mySlides fade" style="display: none;">
+            <div class="numbertext">6 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/europe/denmark"><img src="denmark.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">Denmark</div>
+        </div>
+		<div class="mySlides fade" style="display: none;">
+            <div class="numbertext">7 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/europe/united-kingdom"><img src="london.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">United Kingdom</div>
+        </div>
+		<div class="mySlides fade" style="display: none;">
+            <div class="numbertext">8 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/usa/usa-las-vegas"><img src="las vegas.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">Las Vegas</div>
+        </div>
+		<div class="mySlides fade" style="display: none;">
+            <div class="numbertext">9 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/usa/usa-new-york"><img src="new york.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">New York</div>
+        </div>
+		<div class="mySlides fade" style="display: none;">
+            <div class="numbertext">10 / 10</div>
+            <a href="https://www.emiratesholidays.com/in_en/destination/usa/usa-san-francisco"><img src="san francisco.jpg" style="width:100%; height: 70%"></a>
+            <div class="text">San Francisco</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+			<span class="dot" onclick="currentSlide(6)"></span>
+			<span class="dot" onclick="currentSlide(7)"></span>
+			<span class="dot" onclick="currentSlide(8)"></span>
+			<span class="dot" onclick="currentSlide(9)"></span>
+			<span class="dot" onclick="currentSlide(10)"></span>
+			</div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+		<br>
+		<br>
+		<main style="border: 5px solid; border-radius: 10px; float: center; padding: 30px 10px 10px 30px; color:#5c0632; font-family: 'Dancing Script', cursive;">
+			<form method="get" style="float:center">
+			    <div style="font-size: 70px;" align="center">Search for Flights:
+				</div>
+				<br>
+				<div style="font-size: 50;">
+				<a>
+				<label>From</label>
+				<label>To</label>
+				</a>
+				</div>
+				<br>
+				<div>
+				<select name="drop box" style="font-size: 20px; font-family: 'Dancing Script', cursive; color: #5c0632; border-radius: 5px; border: 2px solid;padding-right: 430px;padding-top: 10px;padding-bottom: 10px;" required>
+                    <option value="">Airport</option>
+					<option value="a2">Algeria</option>
+					<option value="a3">American Samoa</option>
+					<option value="a4">Angola</option>
+					<option value="a5">Anguilla</option>
+					<option value="a6">Antigua and Barbuda</option>
+					<option value="a7">Argentina</option>
+					<option value="a8">Aruba</option>
+					<option value="a9">Australia</option>
+					<option value="a10">Bahamas</option>
+					<option value="a11">Bahrain</option>
+					<option value="a12">Bangladesh</option>
+					<option value="a13">Barbados</option>
+					<option value="a14">Bhutan</option>
+					<option value="a15">Bolivia</option>
+					<option value="a16">Bolivia</option>
+					<option value="a17">Cambodia</option>
+					<option value="a18">Canada</option>
+					<option value="a19">Caribbean</option>
+					<option value="a20">Chile</option>
+					<option value="a21">China</option>
+					<option value="a22">Colombia</option>
+					<option value="a23">Cuba</option>
+					<option value="a24">Denmark</option>
+					<option value="a25">Dominica</option>
+					<option value="a26">Dominican Republic</option>
+					<option value="a27">Easter Island</option>
+					<option value="a28">Egypt</option>
+					<option value="a29">England and Wales</option>
+					<option value="a30">Ethiopia</option>
+					<option value="a31">Europe</option>
+					<option value="a32">Fiji</option>
+					<option value="a33">Finland</option>
+					<option value="a34">France</option>
+					<option value="a35">Germany</option>
+					<option value="a36">Greenland</option>
+					<option value="a37">Hong Kong</option>
+					<option value="a38">Hungary</option>
+					<option value="a39">Iceland</option>
+					<option value="a40">India</option>
+					<option value="a41">Indonesia</option>
+					<option value="a42">Iran</option>
+					<option value="a43">Iraq</option>
+					<option value="a44">Jamaica</option>
+					<option value="a45">Japan</option>
+					<option value="a46">Jordan</option>
+					<option value="a48">Kazakhstan</option>
+					<option value="a49">Kenya</option>
+					<option value="a50">Kiribati</option>
+					<option value="a51">Kuwait</option>
+					<option value="a52">Kyrgyzstan</option>
+					<option value="a53">Laos</option>
+					<option value="a54">Lebanon</option>
+					<option value="a55">Lesotho</option>
+					<option value="a56">Liberia</option>
+					<option value="a57">Libya</option>
+					<option value="a58">Macau</option>
+					<option value="a59">Madagascar</option>
+					<option value="a60">Malaysia</option>
+					<option value="a61">Maldives</option>
+					<option value="a62">Mexico</option>
+					<option value="a63">Morocco</option>
+					<option value="a64">Nepal</option>
+					<option value="a95">New Zealand</option>
+					<option value="a65">Nigeria</option>
+					<option value="a66">North Korea</option>
+					<option value="a67">Pakistan</option>
+					<option value="a68">Panama</option>
+					<option value="a69">Philippines</option>
+					<option value="a70">Qatar</option>
+					<option value="a71">Russia</option>
+					<option value="a72">Saudi Arabia</option>
+					<option value="a73">Scotland</option>
+					<option value="a74">Singapore</option>
+					<option value="a75">Spain</option>
+					<option value="a76">Sri Lanka</option>
+					<option value="a77">Sweden</option>
+					<option value="a78">Taiwan</option>
+					<option value="a79">Thailand</option>
+					<option value="a80">Vietnam</option>
+					<option value="a81">Yemen</option>
+					<option value="a82">Zambia</option>
+					<option value="a83">Zimbabwe</option>
+                </select>
+				&emsp;
+				<select name="drop box" style="font-size: 20px; font-family: 'Dancing Script', cursive; color: #5c0632; border-radius: 5px; border: 2px solid;padding-right: 430px;padding-top: 10px;padding-bottom: 10px;" required>
+                    <option value="">Airport</option>
+					<option value="a2">Algeria</option>
+					<option value="a3">American Samoa</option>
+					<option value="a4">Angola</option>
+					<option value="a5">Anguilla</option>
+					<option value="a6">Antigua and Barbuda</option>
+					<option value="a7">Argentina</option>
+					<option value="a8">Aruba</option>
+					<option value="a9">Australia</option>
+					<option value="a10">Bahamas</option>
+					<option value="a11">Bahrain</option>
+					<option value="a12">Bangladesh</option>
+					<option value="a13">Barbados</option>
+					<option value="a14">Bhutan</option>
+					<option value="a15">Bolivia</option>
+					<option value="a16">Bolivia</option>
+					<option value="a17">Cambodia</option>
+					<option value="a18">Canada</option>
+					<option value="a19">Caribbean</option>
+					<option value="a20">Chile</option>
+					<option value="a21">China</option>
+					<option value="a22">Colombia</option>
+					<option value="a23">Cuba</option>
+					<option value="a24">Denmark</option>
+					<option value="a25">Dominica</option>
+					<option value="a26">Dominican Republic</option>
+					<option value="a27">Easter Island</option>
+					<option value="a28">Egypt</option>
+					<option value="a29">England and Wales</option>
+					<option value="a30">Ethiopia</option>
+					<option value="a31">Europe</option>
+					<option value="a32">Fiji</option>
+					<option value="a33">Finland</option>
+					<option value="a34">France</option>
+					<option value="a35">Germany</option>
+					<option value="a36">Greenland</option>
+					<option value="a37">Hong Kong</option>
+					<option value="a38">Hungary</option>
+					<option value="a39">Iceland</option>
+					<option value="a40">India</option>
+					<option value="a41">Indonesia</option>
+					<option value="a42">Iran</option>
+					<option value="a43">Iraq</option>
+					<option value="a44">Jamaica</option>
+					<option value="a45">Japan</option>
+					<option value="a46">Jordan</option>
+					<option value="a48">Kazakhstan</option>
+					<option value="a49">Kenya</option>
+					<option value="a50">Kiribati</option>
+					<option value="a51">Kuwait</option>
+					<option value="a52">Kyrgyzstan</option>
+					<option value="a53">Laos</option>
+					<option value="a54">Lebanon</option>
+					<option value="a55">Lesotho</option>
+					<option value="a56">Liberia</option>
+					<option value="a57">Libya</option>
+					<option value="a58">Macau</option>
+					<option value="a59">Madagascar</option>
+					<option value="a60">Malaysia</option>
+					<option value="a61">Maldives</option>
+					<option value="a62">Mexico</option>
+					<option value="a63">Morocco</option>
+					<option value="a64">Nepal</option>
+					<option value="a95">New Zealand</option>
+					<option value="a65">Nigeria</option>
+					<option value="a66">North Korea</option>
+					<option value="a67">Pakistan</option>
+					<option value="a68">Panama</option>
+					<option value="a69">Philippines</option>
+					<option value="a70">Qatar</option>
+					<option value="a71">Russia</option>
+					<option value="a72">Saudi Arabia</option>
+					<option value="a73">Scotland</option>
+					<option value="a74">Singapore</option>
+					<option value="a75">Spain</option>
+					<option value="a76">Sri Lanka</option>
+					<option value="a77">Sweden</option>
+					<option value="a78">Taiwan</option>
+					<option value="a79">Thailand</option>
+					<option value="a80">Vietnam</option>
+					<option value="a81">Yemen</option>
+					<option value="a82">Zambia</option>
+					<option value="a83">Zimbabwe</option>
+                </select>
+				<br>
+				<br>
+				<br>
+				<div class="buttonHolder">
+				    <button type="submit" formaction="book tickets.html" style="font-size: 20px; font-family: 'Dancing Script', cursive; color: #5c0632; border-radius: 5px; border: 2px solid;">Search Flights</button>
+				</div>
+				</div>
+			</form>
+		</main>
+	
+    </body>
+</html>

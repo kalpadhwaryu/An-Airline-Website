@@ -1,0 +1,87 @@
+<html>
+<head><title>Login Page</title></head>
+<style>
+body {
+  background-image: url("login.jpg");
+  background-size: 1400px 700px;
+  background-repeat: no-repeat;
+ }
+table {
+    padding: 30px;
+	background-image: url("bridge.jpg");
+	
+	}
+td {
+    padding: 30px;
+	}
+input[type=submit]{
+  background-color: #00FF00;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+ input[type=text] {
+  width: 330px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  
+}
+input[type=text]:focus {
+  width: 100%;
+}
+input[type=password] {
+  width: 330px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  
+}
+input[type=password]:focus {
+  width: 100%;
+}
+</style>
+<body>
+<script>
+function login1()
+{
+var username=document.getElementById("name").value;
+var password=document.getElementById("pass").value;
+var show = document.getElementById("alert");
+if(username==null || username==""){
+	alert("Username is blank");
+	return false; 
+	}
+else if(password==null || password==""){
+	alert("Password is blank");
+	return false; 
+	}
+else{
+	alert("Logged in successfully");
+}
+}
+</script>
+<center><font color="black" face="Magneto" size="20"><b>Login Page</b></font></center><br><br>
+      <table rules="rows" border="5" color="white" align="center"><tr><td colspan="2" align="center"><font color="red" size="6" face="Algerian">Welcome</font></td></tr>
+	                    <tr><td><font color="white" size="4" face="Times New Roman">Username:<td><form><input type="text" placeholder="Enter your username..." id="name"></tr>
+						<tr><td><font color="white" size="4" face="Times New Roman">Password:<td><form><input type="password" placeholder="Enter your password..." id="pass"></tr></font>
+						<tr><td colspan="2" align="center"><form><input type="submit" name="login" value="Login" onclick="login1()"></form></td></tr>
+	  </table><br><br>
+<marquee><font size="5" color="yellow"><b>*DON'T SHARE YOUR USERNAME, PASSWORD OR OTP WITH ANYONE*</b></font></marquee>
+						
+</body>
+</html>

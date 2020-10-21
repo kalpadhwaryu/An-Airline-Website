@@ -1,0 +1,199 @@
+<html>
+<head>
+	<title>Job Application Form </title>
+	<style>
+		input[type=text] {
+			width:50%;
+			padding:12px 20px;
+			margin: 8px 0;
+		}
+		input.email{
+			width:70%;
+		}
+		input.ene{
+			width:70%;
+		}
+		body{
+			background-image:url("JAF.jpeg");
+  			background-repeat:no-repeat;
+  			background-attachment:fixed;
+  			background-size:cover;
+		}
+		a:link {
+			color: blue;
+		}
+		a:visited {
+			color: blue;
+		}
+		a:hover {
+			color: hotpink;
+		}
+		a:active {
+			color: blue;
+		}	
+		body{
+			background-repeat: no-repeat;
+			background-size: 1400px 1000px;
+			}
+	</style>
+</head>
+<body>
+	<a href="main.html">&lt;&lt;Home</a>
+	<center>
+		<h1><u>JOB APPLICATION FORM</u></h1>
+		<h3><br><i>"The greatest thing in this world is not so much where we stand, as in what direction we are moving."</i></h3>
+	</center>
+	<marquee>
+		<h3><font color="red">All blanks with (*) are compulsory</font></h3>
+	</marquee>
+	<hr>
+	<h2>1)Personal Information</h2>
+	<table width="110%">
+		<form method="get">
+			<tr>
+				<td><h3><font color="red">*</font>First Name  :  </h3><td><input type="text" name="fname" size="100"/>
+	        		<td><h3>Middle Name  :  </h3><td><input type="text" name="mname" size="90"/>		
+		    		<td><h3><font color="red">*</font>Last Name  :  </h3><td><input type="text" name="lname" size="80"/>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>Gender  :  </h3></td>
+				<td>
+					<input type="radio" name="gender" value="male"><font size="5">Male</font>
+		                    	<input type="radio" name="gender" value="female"><font size="5">Female</font>
+					<input type="radio" name="gender" value="other"><font size="5">Others</font>
+				</td>
+			</tr>		
+			<tr>
+				<td><h3><font color="red">*</font>Address  :  </h3></td>
+				<td><textarea rows="5" cols="50" placeholder="Enter your address here..."></textarea></td>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>Zip Code  :  </h3></td>
+				<td><input type="text" name="zno"/></td>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>State  :  </h3></td>
+				<td>
+					<select name=slist>
+					<option value="">------------Select State------------</option>
+					<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+					<option value="Andhra Pradesh">Andhra Pradesh</option>
+					<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+					<option value="Assam">Assam</option>
+					<option value="Bihar">Bihar</option>
+					<option value="Chandigarh">Chandigarh</option>
+					<option value="Chhattisgarh">Chhattisgarh</option>
+					<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+					<option value="Daman and Diu">Daman and Diu</option>
+					<option value="Delhi">Delhi</option>
+					<option value="Goa">Goa</option>
+					<option value="Gujarat">Gujarat</option>
+					<option value="Haryana">Haryana</option>
+					<option value="Himachal Pradesh">Himachal Pradesh</option>
+					<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+					<option value="Jharkhand">Jharkhand</option>
+					<option value="Karnataka">Karnataka</option>
+					<option value="Kerala">Kerala</option>
+					<option value="Lakshadweep">Lakshadweep</option>
+					<option value="Madhya Pradesh">Madhya Pradesh</option>
+					<option value="Maharashtra">Maharashtra</option>
+					<option value="Manipur">Manipur</option>
+					<option value="Meghalaya">Meghalaya</option>
+					<option value="Mizoram">Mizoram</option>
+					<option value="Nagaland">Nagaland</option>
+					<option value="Orissa">Orissa</option>
+					<option value="Pondicherry">Pondicherry</option>
+					<option value="Punjab">Punjab</option>
+					<option value="Rajasthan">Rajasthan</option>
+					<option value="Sikkim">Sikkim</option>
+					<option value="Tamil Nadu">Tamil Nadu</option>
+					<option value="Tripura">Tripura</option>
+					<option value="Uttaranchal">Uttaranchal</option>
+					<option value="Uttar Pradesh">Uttar Pradesh</option>
+					<option value="West Bengal">West Bengal</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>Phone Number  :  </h3></td>
+				<td><input type="text" name="pno"/></td>
+				<td><h3>Email : </h3></td>
+				<td><input type="text" name="email" class="email"/></td>
+			</tr>
+		</form>
+	</table>
+	<hr>
+	<h2>2)Education and Experience</h2>
+	<form>
+		<table width="80%">
+			<tr>
+				<td><h3>Primary School : </h3></td>
+				<td><input type="text" name="psname" class="ene"/></td>
+			</tr>   
+		        <tr>
+		            	<td><h3>High School : </h3></td>
+				<td><input type="text" name="hsname" class="ene" /></td>
+			</tr>
+                	<tr>
+				<td><h3><font color="red">*</font>Graduation : </h3></td>
+				<td><input type="text" name="gname" class="ene"/></td>
+			</tr>
+                	<tr>
+		            	<td><h3><font color="red">*</font>Degree : </h3></td>
+				<td><input type="text" name="dname" class="ene"/></td>
+			</tr>   
+		        <tr>
+				<td><h3><font color="red">*</font>Experience : </h3></td>
+				<td><input type="text" name="exname" class="ene"/></td>
+			</tr>
+                	<tr>
+		            	<td><h3><font color="red">*</font>Place Last Worked : </h3></td>
+				<td><input type="text" name="placename" class="ene"/></td>
+		        </tr>
+			<tr>
+				<td><h3><font color="red">*</font>Post You Are Applying For : </h3></td>
+				<td><input type="text" name="apppost" class="ene"/></td> 
+			</tr>
+                	<tr>
+			        <td><h3><font color="red">*</font>Expected Salary : </h3></td>
+				<td><input type="text" name="salary" class="ene"/></td>
+			</tr>
+		</table>
+	</form>
+	<hr>
+	<h2>3)Qualifications</h2>
+	<form>
+		<table>
+			<tr>
+				<td><h3>10th Marksheet : </h3></td>
+				<td><input type="file" name="tm" accept="image"/></td>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>12th Marksheet : </h3></td>
+				<td><input type="file" name="twm" accept="image"/></td>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>Graduation Marksheet : </h3></td>
+				<td><input type="file" name="gm" accept="image"/></td>
+			</tr>
+			<tr>
+				<td><h3><font color="red">*</font>Degree : </h3></td>
+				<td><input type="file" name="dm" accept="image"/></td>
+			</tr>
+			<tr>
+				<td><h3>Questions/Comments : </h3></td>
+				<td><textarea rows="5" cols="80" placeholder="Enter questions or comments here..."></textarea></td>
+			</tr>
+			<tr>
+				<td align="center"><input type="checkbox" name="checkbox" value="check" id="agree"/>I have read and agree to the Terms and Conditions and Privacy Policy</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<input type="button" value="Submit" onclick="window.location.href='Thanks.html'" </button>
+					<input type="reset" name="reset"/>
+				</td>
+			</tr>
+		</table>
+	</form>		
+</body>
+</html>

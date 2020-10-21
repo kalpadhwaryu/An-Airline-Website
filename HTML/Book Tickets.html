@@ -1,0 +1,320 @@
+<html>
+    <head><title>Book Tickets</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	</head>
+	<style>
+        body {
+        background-image:url('Emi2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+	}
+	.buttonHolder{ text-align: right; }
+	
+	.mySlides {display: none}
+	
+	p.a{
+	    word-spacing: 5cm;
+	}
+	
+	p.b{
+	    word-spacing: 3.5cm;
+	}
+	
+    .container {
+        position: relative;
+        padding-left: 35px;
+		margin-bottom: 12px;
+    }
+
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+		left: 0;
+		height: 35px;
+		width: 35px;
+		background-color: white;
+		border-radius: 50%;
+    }
+
+
+
+    .container input:checked ~ .checkmark {
+        background-color: #5c0632;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    .container .checkmark:after {
+ 	    top: 12px;
+	    left: 12px;
+	    width: 11px;
+	    height: 11px;
+	    border-radius: 50%;
+    	background: white;
+    }
+	</style>
+    <body>
+	    <div align="center" style="color:#5c0632; font-family: 'Dancing Script', cursive; margin: 200px 100px 0px 100px;">
+        <main style="border: 5px solid; border-radius: 10px;">
+            <form method="get" style="float: center; font-family: 'Dancing Script', cursive;">
+			<div style="font-size: 30">
+                &emsp; &emsp; &emsp; <div style="font-size:70;">Flights:</div>
+                <br>
+				<p class= "a">
+				<label class="container">
+                <input type="radio" name="emiForm" value="Round Trip" style="color:#5c0632;" required>Round-Trip
+			    <span class="checkmark"></span>
+				</label>
+				<label class="container">
+				<input type="radio" name="emiForm" value="One Way" style="color:#5c0632;"> One-Way
+                <span class="checkmark"></span>
+				</label>
+				<label class="container">
+				<input type="radio" name="emiForm" value="Multi-city" style="color:#5c0632;"> Multi-city
+				<span class="checkmark"></span>
+				</label>
+				</p>
+				
+				<div style="float: left;">
+				<p class="b">
+				&nbsp
+
+                <label style="text-align:center;">From</labe>
+				&emsp; 
+                <label style="text-align:center;">To</label>
+				&emsp;
+				<br>
+				&nbsp
+                <select name="drop box" style="font-family: 'Dancing Script', cursive; font-size: 20px; color: #5c0632; border-radius: 5px; border: 5px solid; padding-right: 20px;padding-top: 10px;padding-bottom: 10px;" required>
+					<option value="">Airport</option>
+					<option value="a2">Algeria</option>
+					<option value="a3">American Samoa</option>
+					<option value="a4">Angola</option>
+					<option value="a5">Anguilla</option>
+					<option value="a6">Antigua and Barbuda</option>
+					<option value="a7">Argentina</option>
+					<option value="a8">Aruba</option>
+					<option value="a9">Australia</option>
+					<option value="a10">Bahamas</option>
+					<option value="a11">Bahrain</option>
+					<option value="a12">Bangladesh</option>
+					<option value="a13">Barbados</option>
+					<option value="a14">Bhutan</option>
+					<option value="a15">Bolivia</option>
+					<option value="a16">Bolivia</option>
+					<option value="a17">Cambodia</option>
+					<option value="a18">Canada</option>
+					<option value="a19">Caribbean</option>
+					<option value="a20">Chile</option>
+					<option value="a21">China</option>
+					<option value="a22">Colombia</option>
+					<option value="a23">Cuba</option>
+					<option value="a24">Denmark</option>
+					<option value="a25">Dominica</option>
+					<option value="a26">Dominican Republic</option>
+					<option value="a27">Easter Island</option>
+					<option value="a28">Egypt</option>
+					<option value="a29">England and Wales</option>
+					<option value="a30">Ethiopia</option>
+					<option value="a31">Europe</option>
+					<option value="a32">Fiji</option>
+					<option value="a33">Finland</option>
+					<option value="a34">France</option>
+					<option value="a35">Germany</option>
+					<option value="a36">Greenland</option>
+					<option value="a37">Hong Kong</option>
+					<option value="a38">Hungary</option>
+					<option value="a39">Iceland</option>
+					<option value="a40">India</option>
+					<option value="a41">Indonesia</option>
+					<option value="a42">Iran</option>
+					<option value="a43">Iraq</option>
+					<option value="a44">Jamaica</option>
+					<option value="a45">Japan</option>
+					<option value="a46">Jordan</option>
+					<option value="a48">Kazakhstan</option>
+					<option value="a49">Kenya</option>
+					<option value="a50">Kiribati</option>
+					<option value="a51">Kuwait</option>
+					<option value="a52">Kyrgyzstan</option>
+					<option value="a53">Laos</option>
+					<option value="a54">Lebanon</option>
+					<option value="a55">Lesotho</option>
+					<option value="a56">Liberia</option>
+					<option value="a57">Libya</option>
+					<option value="a58">Macau</option>
+					<option value="a59">Madagascar</option>
+					<option value="a60">Malaysia</option>
+					<option value="a61">Maldives</option>
+					<option value="a62">Mexico</option>
+					<option value="a63">Morocco</option>
+					<option value="a64">Nepal</option>
+					<option value="a95">New Zealand</option>
+					<option value="a65">Nigeria</option>
+					<option value="a66">North Korea</option>
+					<option value="a67">Pakistan</option>
+					<option value="a68">Panama</option>
+					<option value="a69">Philippines</option>
+					<option value="a70">Qatar</option>
+					<option value="a71">Russia</option>
+					<option value="a72">Saudi Arabia</option>
+					<option value="a73">Scotland</option>
+					<option value="a74">Singapore</option>
+					<option value="a75">Spain</option>
+					<option value="a76">Sri Lanka</option>
+					<option value="a77">Sweden</option>
+					<option value="a78">Taiwan</option>
+					<option value="a79">Thailand</option>
+					<option value="a80">Vietnam</option>
+					<option value="a81">Yemen</option>
+					<option value="a82">Zambia</option>
+					<option value="a83">Zimbabwe</option>
+				</select>
+                <select name="drop box" style="font-family: 'Dancing Script', cursive; font-size: 20px; color: #5c0632; border-radius: 5px; border: 5px solid; padding-right: 20px;padding-top: 10px;padding-bottom: 10px;" required>
+				    <option value="">Airport</option>
+					<option value="a2">Algeria</option>
+					<option value="a3">American Samoa</option>
+					<option value="a4">Angola</option>
+					<option value="a5">Anguilla</option>
+					<option value="a6">Antigua and Barbuda</option>
+					<option value="a7">Argentina</option>
+					<option value="a8">Aruba</option>
+					<option value="a9">Australia</option>
+					<option value="a10">Bahamas</option>
+					<option value="a11">Bahrain</option>
+					<option value="a12">Bangladesh</option>
+					<option value="a13">Barbados</option>
+					<option value="a14">Bhutan</option>
+					<option value="a15">Bolivia</option>
+					<option value="a16">Bolivia</option>
+					<option value="a17">Cambodia</option>
+					<option value="a18">Canada</option>
+					<option value="a19">Caribbean</option>
+					<option value="a20">Chile</option>
+					<option value="a21">China</option>
+					<option value="a22">Colombia</option>
+					<option value="a23">Cuba</option>
+					<option value="a24">Denmark</option>
+					<option value="a25">Dominica</option>
+					<option value="a26">Dominican Republic</option>
+					<option value="a27">Easter Island</option>
+					<option value="a28">Egypt</option>
+					<option value="a29">England and Wales</option>
+					<option value="a30">Ethiopia</option>
+					<option value="a31">Europe</option>
+					<option value="a32">Fiji</option>
+					<option value="a33">Finland</option>
+					<option value="a34">France</option>
+					<option value="a35">Germany</option>
+					<option value="a36">Greenland</option>
+					<option value="a37">Hong Kong</option>
+					<option value="a38">Hungary</option>
+					<option value="a39">Iceland</option>
+					<option value="a40">India</option>
+					<option value="a41">Indonesia</option>
+					<option value="a42">Iran</option>
+					<option value="a43">Iraq</option>
+					<option value="a44">Jamaica</option>
+					<option value="a45">Japan</option>
+					<option value="a46">Jordan</option>
+					<option value="a48">Kazakhstan</option>
+					<option value="a49">Kenya</option>
+					<option value="a50">Kiribati</option>
+					<option value="a51">Kuwait</option>
+					<option value="a52">Kyrgyzstan</option>
+					<option value="a53">Laos</option>
+					<option value="a54">Lebanon</option>
+					<option value="a55">Lesotho</option>
+					<option value="a56">Liberia</option>
+					<option value="a57">Libya</option>
+					<option value="a58">Macau</option>
+					<option value="a59">Madagascar</option>
+					<option value="a60">Malaysia</option>
+					<option value="a61">Maldives</option>
+					<option value="a62">Mexico</option>
+					<option value="a63">Morocco</option>
+					<option value="a64">Nepal</option>
+					<option value="a95">New Zealand</option>
+					<option value="a65">Nigeria</option>
+					<option value="a66">North Korea</option>
+					<option value="a67">Pakistan</option>
+					<option value="a68">Panama</option>
+					<option value="a69">Philippines</option>
+					<option value="a70">Qatar</option>
+					<option value="a71">Russia</option>
+					<option value="a72">Saudi Arabia</option>
+					<option value="a73">Scotland</option>
+					<option value="a74">Singapore</option>
+					<option value="a75">Spain</option>
+					<option value="a76">Sri Lanka</option>
+					<option value="a77">Sweden</option>
+					<option value="a78">Taiwan</option>
+					<option value="a79">Thailand</option>
+					<option value="a80">Vietnam</option>
+					<option value="a81">Yemen</option>
+					<option value="a82">Zambia</option>
+					<option value="a83">Zimbabwe</option>
+                </select>
+				</p>
+                <br>
+		        <label>Depart:___</label>
+		        <input type="date" name="Depart" style="font-family: 'Dancing Script', cursive; color: #5c0632; font-size: 20px; border-radius: 5px; border: 2px solid; padding-right: 20px;padding-top: 10px;padding-bottom: 10px" required/>
+
+				<label>Return:___</label>
+				 <input type="date" name="Return" style="font-family: 'Dancing Script', cursive; color: #5c0632; font-size: 20px; border-radius: 5px; border: 2px solid; padding-right: 20px;padding-top: 10px;padding-bottom: 10px" required/>		 
+
+				<label>Passengers:___</label>
+				 <input type="text" style="font-family: 'Dancing Script', cursive; color: #5c0632; border-radius: 5px; font-size: 20px; border: 2px solid; padding-right: 20px;padding-top: 10px;padding-bottom: 10px" required/>
+				 
+				 <br>
+				 <br>
+				 <br>
+
+				<label>Promo Code</label>
+				 <input type="password" style="font-family: 'Dancing Script', cursive; color: #5c0632; font-size: 20px; border-radius: 5px; border: 2px solid; padding-right: 20px;padding-top: 10px;padding-bottom: 10px" required/>
+				<br>
+				</div>
+				<br><br><br><br><br><br><br><br><br><br><br>
+				<div class="buttonHolder">
+				    <button type="submit" formaction="https://www.emirates.com/in/english/book/book-a-flight.aspx" style="font-size: 20px; font-family: 'Dancing Script', cursive; color: #5c0632; border-radius: 10px; border: 2px solid;">Book Flights</button>
+				</div>
+			</div>
+            </form>
+		</main>
+		<br>
+		<br>
+		<br>
+		<div style="margin: 100px 0px 0px 0px;">
+		<div style="font-size: 80">Search your Destination.</div>
+		<br>
+		<br>
+		<div style="border: 3px solid, border-radius: 10px;">
+		    <img src="wmap.jpg" alt="Map" usemap="#emimap" width= "1000px" height= "698px" style="border: 5px solid; border-radius: 10px; color:#5c0632;">
+		
+		    <map name="emimap">
+		        <area shape="poly" coords="5,200, 80,95, 450,95, 320,275, 260,355, 380,436,  285,596, 255,580, 5,200" alt="Americas" href="https://www.emirates.com/in/english/destinations/flights-to-north-south-america.aspx">
+			    <area shape="poly" coords="411,200, 499,120, 647,111, 660,140, 642,199, 636,250, 601,261, 600,288, 582,290, 543,301, 450,310, 411,200" alt="Europe" href="https://www.emirates.com/in/English/destinations/flights-to-europe.aspx">
+			    <area shape="poly" coords="420,360, 453,317, 498,310, 541,329, 539,360, 570,360, 590,391, 661,390, 611,461, 600,496, 531,521, 440,411, 420,360, " alt="Africa" href="https://www.emirates.com/in/English/destinations/flights-to-africa.aspx">
+			    <area shape="poly" coords="646,341, 636,310, 620,310, 606,261, 636,250, 642,199, 660,160, 735,110, 891,151, 997,201, 811,340, 815,398, 965,534, 938,561, 791,521, 769,441, 680,393, 646,341" alt="Asia and Pacific" href="https://www.emirates.com/in/English/destinations/flights-to-asia-pacific.aspx">
+			    <area shape="poly" coords="539,360, 541,329, 560,330, 545,300, 600,290, 636,310, 646,341, 636,360, 591,385, 570,360, 539,360" alt="Middle East" href="https://www.emirates.com/in/English/destinations/flights-to-middle-east.aspx">
+		    </map>
+		</div>
+		</div>
+		</div>
+    </body>
+</html>

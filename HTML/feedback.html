@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <style>
+        body{
+            background-image: url(plane2.jpg);
+            font-family: calibri;
+        }
+        p{
+            color :darkred;
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        h1{
+            color: green;
+            text-align: center;
+            font-size: 50px;
+        }
+        h3{
+            color :black;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label{
+            text-align: center;
+            color :black;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+<title>FEEDBACK FORM</title>
+<body>
+    <img src="emirate.png" align="center" width="15%" height="30%">
+    <br>
+    <h1>FEEDBACK FORM</h1>
+    <h3>We would love to hear your thoughts, concerns or problems with anything so we can improve!</h3>
+    <br>
+    <br>
+    <p>Please share your feedback as your overall experience :</p>
+    <form method="get">
+        <input type="radio" id="excellent" name="feedback" value="excellent">
+        <label for="excellent"><b>Excellent</b></label>
+        <input type="radio" id="very good" name="feedback" value="very good">
+        <label for="very good"><b>Very good</b></label>
+        <input type="radio" id="good" name="feedback" value="good">
+        <label for="good"><b>Good</b></label>
+    <br>
+    <br>
+    <p>Write your feedback here :</p>
+        <textarea id="feedback" name="feedback" rows="4" cols="50">
+        </textarea>
+    <br>
+    <br>
+    <p>Name :<input type="text" id="fullname" name="fullname"><br>
+    <p>Email :<input type="email" id="emails" name="emails"><br><br><br>
+        
+    <input type="submit" value="Submit">
+    &emsp;
+    <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
